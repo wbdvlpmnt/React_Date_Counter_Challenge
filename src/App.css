@@ -1,0 +1,17 @@
+.container{
+    display: flex;
+}
+
+button{
+    height: 33px;
+    width: 33px;
+    margin: 0.5rem;
+}
+
+
+
+.app{
+    margin: auto;
+    width: 50%;
+    padding: 10px;  
+}
