@@ -7,7 +7,6 @@ function App() {
   const [step, setStep] = useState(1);
   const [todaysDate, setTodaysDate] = useState(new Date());
   const renderedDate = todaysDate.toString().slice(0, 15);
-  // console.log(todaysDate.getDate(), todaysDate.getDate() + 1);
   return (
     <div className="app">
       <Step step={step} setStep={setStep} />
@@ -19,7 +18,11 @@ function App() {
         step={step}
       />
       <p>
-        {count * step} days from today is {renderedDate}
+        {count * step < 0 ? -1 * count * step : count * step}{" "}
+        {count * step === 1 || count * step === -1 || count * step === 0
+          ? "day"
+          : "days"}{" "}
+        {count * step < 0 ? "ago" : "from today"} is {renderedDate}
       </p>
     </div>
   );
