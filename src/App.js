@@ -49,13 +49,17 @@ function Count({ count, setCount, todaysDate, setTodaysDate, step }) {
   function handleIncreaseCount() {
     setCount((c) => c + 1);
     const incrDate = todaysDate.getDate() + 1 * step;
-    setTodaysDate(new Date(2023, 10, incrDate));
+    const currMonth = todaysDate.getMonth();
+    const currYear = todaysDate.getFullYear();
+    setTodaysDate(new Date(currYear, currMonth, incrDate));
   }
 
   function handleDecreaseCount() {
     setCount((c) => c - 1);
     const decrDate = todaysDate.getDate() - 1 * step;
-    setTodaysDate(new Date(2023, 10, decrDate));
+    const currMonth = todaysDate.getMonth();
+    const currYear = todaysDate.getFullYear();
+    setTodaysDate(new Date(currYear, currMonth, decrDate));
   }
 
   return (
