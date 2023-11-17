@@ -39,13 +39,13 @@ function Step({ step, setStep }) {
 }
 
 function Count({ count, setCount, todaysDate, setTodaysDate, step }) {
-  function handleIncreaseCount(todaysDate, setTodaysDate, step) {
+  function handleIncreaseCount() {
     setCount((c) => c + 1);
     const incrDate = todaysDate.getDate() + 1 * step;
     setTodaysDate(new Date(2023, 10, incrDate));
   }
 
-  function handleDecreaseCount(todaysDate, setTodaysDate) {
+  function handleDecreaseCount() {
     setCount((c) => c - 1);
     const decrDate = todaysDate.getDate() - 1 * step;
     setTodaysDate(new Date(2023, 10, decrDate));
@@ -53,15 +53,9 @@ function Count({ count, setCount, todaysDate, setTodaysDate, step }) {
 
   return (
     <div className="container">
-      <button onClick={() => handleDecreaseCount(todaysDate, setTodaysDate)}>
-        -
-      </button>
+      <button onClick={handleDecreaseCount}>-</button>
       <p>Count: {count}</p>
-      <button
-        onClick={() => handleIncreaseCount(todaysDate, setTodaysDate, step)}
-      >
-        +
-      </button>
+      <button onClick={handleIncreaseCount}>+</button>
     </div>
   );
 }
