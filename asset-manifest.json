@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/React_Date_Counter_Challenge/static/css/main.b5625d00.css",
+    "main.js": "/React_Date_Counter_Challenge/static/js/main.473ecbd6.js",
+    "index.html": "/React_Date_Counter_Challenge/index.html",
+    "main.b5625d00.css.map": "/React_Date_Counter_Challenge/static/css/main.b5625d00.css.map",
+    "main.473ecbd6.js.map": "/React_Date_Counter_Challenge/static/js/main.473ecbd6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b5625d00.css",
+    "static/js/main.473ecbd6.js"
+  ]
+}
