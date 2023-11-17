@@ -38,9 +38,13 @@ function Message({ step, count, todaysDate }) {
 function Step({ step, setStep }) {
   return (
     <div className="container">
-      <button onClick={() => setStep((s) => s - 1)}>-</button>
+      <button className="btn" onClick={() => setStep((s) => s - 1)}>
+        -
+      </button>
       <p>Step: {step}</p>
-      <button onClick={() => setStep((s) => s + 1)}>+</button>
+      <button className="btn" onClick={() => setStep((s) => s + 1)}>
+        +
+      </button>
     </div>
   );
 }
@@ -64,9 +68,13 @@ function Count({ count, setCount, todaysDate, setTodaysDate, step }) {
 
   return (
     <div className="container">
-      <button onClick={handleDecreaseCount}>-</button>
+      <button className="btn" onClick={handleDecreaseCount}>
+        -
+      </button>
       <p>Count: {count}</p>
-      <button onClick={handleIncreaseCount}>+</button>
+      <button className="btn" onClick={handleIncreaseCount}>
+        +
+      </button>
     </div>
   );
 }
