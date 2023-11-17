@@ -6,7 +6,7 @@ function App() {
   const [count, setCount] = useState(0);
   const [step, setStep] = useState(1);
   const [todaysDate, setTodaysDate] = useState(new Date());
-  const renderedDate = todaysDate.toString().slice(0, 15);
+
   return (
     <div className="app">
       <Step step={step} setStep={setStep} />
@@ -17,14 +17,21 @@ function App() {
         setTodaysDate={setTodaysDate}
         step={step}
       />
-      <p>
-        {count * step < 0 ? -1 * count * step : count * step}{" "}
-        {count * step === 1 || count * step === -1 || count * step === 0
-          ? "day"
-          : "days"}{" "}
-        {count * step < 0 ? "ago" : "from today"} is {renderedDate}
-      </p>
+      <Message count={count} step={step} todaysDate={todaysDate} />
     </div>
+  );
+}
+
+function Message({ step, count, todaysDate }) {
+  const renderedDate = todaysDate.toString().slice(0, 15);
+  return (
+    <p>
+      {count * step < 0 ? -1 * count * step : count * step}{" "}
+      {count * step === 1 || count * step === -1 || count * step === 0
+        ? "day"
+        : "days"}{" "}
+      {count * step < 0 ? "ago" : "from today"} is {renderedDate}
+    </p>
   );
 }
 
