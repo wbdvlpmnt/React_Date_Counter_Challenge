@@ -1,4 +1,4 @@
-# React Date Couter Challenge
+# React Date Counter Challenge
 
 In this challenge a date counter was created. The Date counter allows the user to increment or decrement the number of days and the app can tell the user the day, month and year based on the increments or decrements. There is also a step feature that allows increments and decrements allowing the user to change the number of days by 2, 3, 4...day increments/decrements. The app focuses on using state, child components, props, and destructuring props.
 
