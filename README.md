@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+# React Date Couter Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In this challenge a date counter was created. The Date counter allows the user to increment or decrement the number of days and the app can tell the user the day, month and year based on the increments or decrements. There is also a step feature that allows increments and decrements allowing the user to change the number of days by 2, 3, 4...day increments/decrements. The app focuses on using state, child components, props, and destructuring props.
 
-## Available Scripts
+## Key Takeaways
+Declaring State: 
+<br/>
+<img width="481" alt="image" src="https://github.com/wbdvlpmnt/React_Date_Counter_Challenge/assets/139825457/3b3b26c6-bec6-4423-83d2-f89cc8f2c312">
 
-In the project directory, you can run:
+Parent component with children:
+<br/>
+![image](https://github.com/wbdvlpmnt/React_Date_Counter_Challenge/assets/139825457/37a93243-ae03-45b9-b380-7d771ff265b9)
 
-### `npm start`
+Passing props:
+<br/>
+<img width="328" alt="image" src="https://github.com/wbdvlpmnt/React_Date_Counter_Challenge/assets/139825457/abdd34de-a0c4-4186-8e7a-1ab9bd8afcc8">
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Destructuring Props:
+<br/>
+<img width="629" alt="image" src="https://github.com/wbdvlpmnt/React_Date_Counter_Challenge/assets/139825457/4d941199-1da4-421e-8e56-b623601a131e">
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
